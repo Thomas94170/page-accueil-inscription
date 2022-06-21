@@ -1,0 +1,67 @@
+@font-face {
+    font-family: "Orbiton";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(./Orbitron/static/Orbitron-Regular.ttf) format("woff2");
+  }
+
+
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(galaxy.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+h1,p{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: black;
+}
+
+li a :hover{
+    background-color: #93ACB5;
+}
+
+table{
+    margin: 0;
+    padding: 0;
+}
+
+.countdown{
+    font-family: "Orbiton";
+    font-size: 45px;
+    letter-spacing: 2px;
+}
+
+.formulaire{
+    font-family: "Orbiton";
+    font-size: 10 px
+}
+
+.logo{
+    border-radius: 50px;
+    border: 2px solid white;
+    margin: 4px;
+    padding: 10px;
+}
+
+.btn{
+    margin-left: 5px;
+    border: 1px solid black;
+}
+
+.champ{
+    background-color: transparent;
+}
+
+.inscription{
+    font-family: "Orbiton";
+    font-size: 35px;
+    letter-spacing: 2px;
+}
