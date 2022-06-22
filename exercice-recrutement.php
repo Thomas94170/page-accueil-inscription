@@ -19,7 +19,7 @@
     <br><br><br><br><br><br>
 
 
-
+    <div id="particles-js" class="particles"></div>
     <div>
         <div class="countdown d-flex justify-content-center fst-italic text-light text-center" id="compte_a_rebours"></div>
         <p class="d-flex justify-content-center fst-italic text-light text-center formulaire">Il arrive bientot... Inscrivez-vous afin d'être informé!</p>
@@ -54,28 +54,29 @@
                 <img src="google.png" alt="google" srcset="" width="40px" height="40px">
             </span>
         </div>
-    </div>
-    <?php
-    $inscription = 'Merci de vous être inscrit !';
-    $error = 'E-mail non valide, veuillez recommencer';
+        <?php
+        $inscription = 'Merci de vous être inscrit !';
+        $error = 'E-mail non valide, veuillez recommencer';
 
 
 
-    if (isset($_POST['valider'])) {
-        if (isset($_POST['email'])) {
-            if (!empty($_POST['email'])) {
-                $email = htmlspecialchars($_POST['email']);
-                echo '<div class="alert alert-success  text-center inscription">' . $inscription . '</div>';
-                echo '<div  class="alert alert-success text-center inscription">L\'adresse ' . $email . ' est bien enregistré !</div>';
-            } else {
-                echo '<div class="alert alert-success text-center inscription">' . $error . '</div>';
+        if (isset($_POST['valider'])) {
+            if (isset($_POST['email'])) {
+                if (!empty($_POST['email'])) {
+                    $email = htmlspecialchars($_POST['email']);
+                    echo '<div class="alert alert-success  text-center inscription">' . $inscription . '</div>';
+                    echo '<div  class="alert alert-success text-center inscription">L\'adresse ' . $email . ' est bien enregistré !</div>';
+                } else {
+                    echo '<div class="alert alert-success text-center inscription">' . $error . '</div>';
+                }
             }
         }
-    }
-    ?>
+        ?>
+    </div>
 
 
-    <div id="particles-js"></div>
+
+    <!-- <div id="particles-js"></div> -->
     <br>
 
 
